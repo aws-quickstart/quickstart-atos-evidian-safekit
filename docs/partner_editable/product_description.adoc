@@ -1,0 +1,41 @@
+// Replace the content in <>
+// Briefly describe the software. Use consistent and clear branding. 
+// Include the benefits of using the software on AWS, and provide details on usage scenarios.
+
+
+Inside the Atos cybersecurity division, Evidian has developed SafeKit, a software-only high-availability product that helps companies secure 24/7 operation of critical applications. It does not require specific hardware, specific network configuration, or specific external storage. It lends itself to the AWS Cloud because it is hardware agnostic.
+
+The unavailability of an application can be due to three types of problems that SafeKit addresses on AWS:
+
+* *Hardware and environment (20%):* This problem includes the failure of a server, a rack, or an entire data center. This Quick Start addresses the problem by deploying across multiple AWS Availability Zones.
+* *Software (40%):* Software failures can be triggered by faulty software updates, software bugs, or overloaded services. SafeKit on AWS addresses these with smooth server-by-server updating, process monitoring, custom application checkers, and load balancing of front-end applications.
+* *Human errors (40%):* Problems related to human error include administration error and the inability to properly restart a critical service. The SafeKit interface enables users to control all their AWS clusters and servers from a single web console. They can access the console in a browser either on the servers or on an external workstation.
+
+== Mirror and farm modules
+
+SafeKit works with various software clusters. Customers can configure clusters for a given application using one or more application modules: mirror modules, farm modules, or a combination. Mirror modules use primary and secondary servers with real-time file replication and failover. Farm modules use network load balancing with failover for up to four servers.
+
+Customers configure each module with the following: the server IP addresses for heartbeats, the virtual IP address of the cluster, load-balancing rules (for farm modules), the file directories to replicate (for mirror modules), the hardware and software failure detectors, and the service to restart in case of failure.
+
+https://www.evidian.com/products/high-availability-software-for-application-clustering/#t2[Examples of preconfigured mirror modules delivered with SafeKit] are Microsoft SQL Server, PostgreSQL, Oracle, MySQL, Firebird, Hyper-V, Milestone, and Hanwha for video surveillance. Customers can create a new module for a new application starting from the generic mirror module and configuring it to replicate any type of data and restart any services.
+
+https://www.evidian.com/products/high-availability-software-for-application-clustering/#t2[Examples of preconfigured farm modules delivered with SafeKit] are Apache and Microsoft IIS. Customers can create a new module for a new application starting from the generic farm module and configuring it to load balance any port and restart any services.
+
+Mirror modules work as follows:
+
+* Users are connected to a primary/secondary virtual IP address, which is configured in the load balancer. SafeKit provides a generic health check for the load balancer. On the primary server, the health check returns *OK* to the load balancer and *NOK* on the secondary server.
+* On each server, SafeKit monitors the critical application with process checkers and custom checkers.
+* SafeKit automatically restarts the critical application via restart scripts when there is a software or hardware failure.
+* SafeKit replicates files between the instance file systems that contain critical data synchronously in real time.
+* A connector for the SafeKit web console is installed in each server, enabling you to manage the high-availability cluster from a browser.
+
+Farm modules work as follows:
+
+* Users are connected to a virtual IP address, which is configured in the load balancer.
+* SafeKit provides a generic health check for the load balancer. When the farm module is stopped on a server or when the server terminates, the health check returns *NOK* to the load balancer, which stops load-balancing requests to the server.
+* On each server, SafeKit monitors the critical application with process checkers and custom checkers.
+* SafeKit automatically restarts the critical application via restart scripts in a server when there is a software failure.
+* A connector for the SafeKit web console is installed in each server, enabling you to manage the high-availability cluster from a browser.
+
+The generic mirror and farm modules can be automatically deployed with the AWS Quick Start. Customers can also manually install SafeKit on existing AWS servers. See the link:\l[FAQ] section of this deployment guide.
+

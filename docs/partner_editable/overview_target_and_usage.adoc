@@ -1,0 +1,16 @@
+// Replace the content in <>
+// Identify your target audience and explain how/why they would use this Quick Start.
+//Avoid borrowing text from third-party websites (copying text from AWS service documentation is fine). Also, avoid marketing-speak, focusing instead on the technical aspect.
+
+This Quick Start reference deployment guide provides step-by-step instructions for deploying SafeKit on the AWS Cloud.
+
+This Quick Start is for people who want to try the Evidian SafeKit product for building high-availability clusters with synchronous real-time replication, network load balancing, and automatic failover. SafeKit addresses business continuity, disaster recovery, and scalability for Windows and Linux applications with redundancy and with active or passive backup servers.
+
+*Please know that we may share who uses an AWS Quick Start with the AWS Partner Network (APN) Partner that collaborated with AWS on its content.*
+
+NOTE: This Quick Start was created by Evidian in collaboration with Amazon Web Services (AWS). Evidian is a wholly owned subsidiary of Atos.
+
+
+
+
+

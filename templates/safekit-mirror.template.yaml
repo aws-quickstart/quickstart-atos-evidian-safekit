@@ -3,6 +3,8 @@ Description: This template creates a SafeKit mirror cluster installed in two Ava
   in one Region. **WARNING** This template creates AWS resources. You will be billed
   for the AWS resources used if you create a stack from this template. (qs-1qtdda188)
 Metadata:
+  QuickStartDocumentation:
+    EntrypointName: "Launch into a SafeKit Mirror"
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label:

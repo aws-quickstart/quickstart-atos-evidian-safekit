@@ -1,0 +1,10 @@
+// There are generally two deployment options. If additional are required, add them here
+
+This Quick Start provides two deployment options:
+
+*Mirror: Deploy Evidian SafeKit into a new VPC* with a mirror module running. This option builds a new AWS environment consisting of the VPC, subnets, security groups, load balancer, instances, and other infrastructure components. It then deploys SafeKit into this new VPC, and then installs, configures, and launches a SafeKit generic mirror module.
+
+*Farm: Deploy* Evidian SafeKit *into a new VPC* with a farm module running. This option builds a new AWS environment consisting of the VPC, subnets, security groups, load balancer, instances, and other infrastructure components. It then deploys SafeKit into this new VPC, and then installs, configures, and launches a SafeKit generic farm module.
+
+
+The Quick Start provides separate templates for these options. It also lets you configure Classless Inter-Domain Routing (CIDR) blocks, instance types, and {partner-product-name} settings, as discussed later in this guide.

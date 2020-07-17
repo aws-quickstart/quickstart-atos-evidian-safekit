@@ -1,0 +1,39 @@
+
+.Network configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Number of instances
+(`NumberOfInstances`)|`2`|Number of EC2 instances to create.|Availability Zones
+(`AvailabilityZones`)|`**__Requires Input__**`|Set as many Availability Zones as there are instances.|Public subnet 1 CIDR
+(`PublicSubnet1CIDR`)|`10.0.128.0/20`|CIDR block for the public DMZ subnet 1 located in Availability Zone 1.|Public subnet 2 CIDR
+(`PublicSubnet2CIDR`)|`10.0.144.0/20`|CIDR block for the public DMZ subnet 2 located in Availability Zone 2.|Public subnet 3 CIDR
+(`PublicSubnet3CIDR`)|`10.0.160.0/20`|CIDR block for the public DMZ subnet 3 located in Availability Zone 3.|Public subnet 4 CIDR
+(`PublicSubnet4CIDR`)|`10.0.176.0/20`|CIDR block for the public DMZ subnet 4 located in Availability Zone 4.|Allowed CIDR for SafeKit environment
+(`RemoteAccessCIDR`)|`**__Requires Input__**`|Enter the CIDR IP range that is permitted to access SafeKit environment. Set this value to a trusted IP range. For example, you might grant access only to your corporate network.|Allowed CIDR for virtual IP access to SafeKit web console
+(`VipCIDR`)|`**__Requires Input__**`|Enter the CIDR IP range that is permitted to access SafeKit web console. Set this value to a trusted IP range. For example, you might grant access only to your corporate network.
+|===
+.Amazon EC2 configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Key pair name
+(`KeyPairName`)|`**__Requires Input__**`|Enter the public/private key pair you created in your preferred AWS Region; see the “Technical requirements” section of the deployment guide.|Instance type
+(`InstanceType`)|`t2.small`|Choose the Amazon EC2 instance type.|Operating system
+(`OSType`)|`Linux`|Choose Windows to change the operating system.
+|===
+.Evidian SafeKit – farm cluster configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|SafeKit module name
+(`SafekitModuleName`)|`farm`|The name of the SafeKit module you're deploying. This is not editable.|Instance name prefix
+(`InstanceNamePrefix`)|`server`|The prefix in the SafeKit web console for each instance name. Enter a different name if required for your configuration.|Virtual IP port
+(`VipPort`)|`9453`|The port of the virtual IP that is used for failover of the SafeKit mirror. Enter a port 1–49151.|Password
+(`CAservPwd`)|`**__Requires Input__**`|Password for SafeKit web console certificates. Must be at least 8 characters long and contain at least 1 uppercase letter, 1 lowercase letter, and 1 number. Do not use quotation marks, backslashes, forward slashes, or the @ symbol.
+|===
+.AWS Quick Start configuration
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default Value|Description|Quick Start S3 bucket name
+(`QSS3BucketName`)|`aws-quickstart`|The S3 bucket that you created for your copy of Quick Start assets. Use this if you decide to customize the Quick Start. This bucket name can include numbers, lowercase letters, uppercase letters, and hyphens but should not start or end with a hyphen.|Quick Start S3 bucket Region
+(`QSS3BucketRegion`)|`us-east-1`|The AWS Region where the Quick Start S3 bucket (QSS3BucketName) is hosted. When using your own bucket, you must specify this value.|Quick Start S3 key prefix
+(`QSS3KeyPrefix`)|`quickstart-atos-evidian-safekit/`|The S3 key name prefix that is used to simulate a folder for your copy of Quick Start assets. Use this if you decide to customize the Quick Start. This prefix can include numbers, lowercase letters, uppercase letters, hyphens, and forward slashes. See https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html.
+|===

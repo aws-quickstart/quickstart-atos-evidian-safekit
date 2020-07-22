@@ -1,6 +1,6 @@
 
-=== Launch into a SafeKit Farm
-include::safekit-farm.template.adoc[]
-
 === Launch into a SafeKit Mirror
 include::safekit-mirror.template.adoc[]
+
+=== Launch into a SafeKit Farm
+include::safekit-farm.template.adoc[]

@@ -1,3 +1,6 @@
 // Include details about the license and how they can sign up. If no license is required, clarify that. 
 
 Evidian SafeKit provides a free trial license that’s good for three days of continuous uptime. For a full license, contact an Evidian sales representative or an Evidian https://www.evidian.com/partners/[partner].
+
+// Or, if the deployment uses an AMI, update this paragraph. If it doesn’t, remove the paragraph.
+_The Quick Start requires a subscription to the Amazon Machine Image (AMI) when running Windows, which is available from https://aws.amazon.com/marketplace/pp/B07WTRJXKS/[Windows Server 2019 (Win Server)] in the https://aws.amazon.com/marketplace/[AWS Marketplace^]. Additional pricing, terms, and conditions may apply. For instructions, see link:#step-2.-subscribe-to-the-software-ami[step 2] in the deployment section._

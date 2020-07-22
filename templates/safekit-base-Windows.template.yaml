@@ -95,39 +95,39 @@ Conditions:
 Mappings:
   AWSAMIRegionMap:
     AMI:
-      WS2019FULLBASE: SupportedImages Windows_Server-2019-English-Full-Base-e060cf12-9796-407b-b001-316a3dc7e9fc-ami-0c69ced99897edf49.4
+      WS2019FULLBASE: Windows_Server-2019-English-Full-Base-2020.07.15
     eu-north-1:
-      WS2019FULLBASE: ami-0e294d4737cafaa52
+      WS2019FULLBASE: ami-092287cf5a11bfb9e
     ap-south-1:
-      WS2019FULLBASE: ami-0bd403ee453a262c7
+      WS2019FULLBASE: ami-03dbf9550d4620230
     eu-west-3:
-      WS2019FULLBASE: ami-0f45d43037db0ab1f
+      WS2019FULLBASE: ami-0ace5ff23b1a4725d
     eu-west-2:
-      WS2019FULLBASE: ami-0b3c4faa88f1dafce
+      WS2019FULLBASE: ami-0c80f4021417f8488
     eu-west-1:
-      WS2019FULLBASE: ami-028ad005db3b27f2d
+      WS2019FULLBASE: ami-0753ddff1a67fca78
     ap-northeast-2:
-      WS2019FULLBASE: ami-02dd5312bcc1a87a7
+      WS2019FULLBASE: ami-049e67b9661b9ee3e
     ap-northeast-1:
-      WS2019FULLBASE: ami-080ec7e848f2d6b19
+      WS2019FULLBASE: ami-0f1d9d91c16265769
     sa-east-1:
-      WS2019FULLBASE: ami-0df0bf74e53d92978
+      WS2019FULLBASE: ami-03c39c9a3184e919d
     ca-central-1:
-      WS2019FULLBASE: ami-02271c483d06664c3
+      WS2019FULLBASE: ami-0df364e027762ec43
     ap-southeast-1:
-      WS2019FULLBASE: ami-0f797b4d736226e2e
+      WS2019FULLBASE: ami-003ad59a0b2b3c98f
     ap-southeast-2:
-      WS2019FULLBASE: ami-0c6cb8ba93dc686ce
+      WS2019FULLBASE: ami-09a17b63e7283d6a2
     eu-central-1:
-      WS2019FULLBASE: ami-0eb0867dd47b87591
+      WS2019FULLBASE: ami-0075ac87f3bb991bc
     us-east-1:
-      WS2019FULLBASE: ami-0f34705226f92f405
+      WS2019FULLBASE: ami-0f38562b9d4de0dfe
     us-east-2:
-      WS2019FULLBASE: ami-05be8cb28d99bc8ee
+      WS2019FULLBASE: ami-066a1a3fa81bfbd00
     us-west-1:
-      WS2019FULLBASE: ami-0bdea37bcca029458
+      WS2019FULLBASE: ami-0d1b8b740ddc3b78d
     us-west-2:
-      WS2019FULLBASE: ami-09b506bbd3aa0d274
+      WS2019FULLBASE: ami-09fa39d0afa9024db
 Resources:
   SafeKitServer:
     Type: AWS::EC2::Instance

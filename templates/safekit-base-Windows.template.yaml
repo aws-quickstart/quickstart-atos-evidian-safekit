@@ -95,39 +95,39 @@ Conditions:
 Mappings:
   AWSAMIRegionMap:
     AMI:
-      WS2019FULLBASE: Windows_Server-2019-English-Full-Base-2020.07.15
+      WS2019FULLBASE: Windows_Server-2019-English-Full-Base-2020.11.11
     eu-north-1:
-      WS2019FULLBASE: ami-092287cf5a11bfb9e
+      WS2019FULLBASE: ami-0d365da7a0e121309
     ap-south-1:
-      WS2019FULLBASE: ami-03dbf9550d4620230
+      WS2019FULLBASE: ami-0994975f92b8520bc
     eu-west-3:
-      WS2019FULLBASE: ami-0ace5ff23b1a4725d
+      WS2019FULLBASE: ami-0fb40ac716767a2ee
     eu-west-2:
-      WS2019FULLBASE: ami-0c80f4021417f8488
+      WS2019FULLBASE: ami-023b643326f4d6eff
     eu-west-1:
-      WS2019FULLBASE: ami-0753ddff1a67fca78
+      WS2019FULLBASE: ami-065a15cef040336bf
     ap-northeast-2:
-      WS2019FULLBASE: ami-049e67b9661b9ee3e
+      WS2019FULLBASE: ami-05d56404106a1706c
     ap-northeast-1:
-      WS2019FULLBASE: ami-0f1d9d91c16265769
+      WS2019FULLBASE: ami-0feef1943a971f00e
     sa-east-1:
-      WS2019FULLBASE: ami-03c39c9a3184e919d
+      WS2019FULLBASE: ami-0c5f3215703349e96
     ca-central-1:
-      WS2019FULLBASE: ami-0df364e027762ec43
+      WS2019FULLBASE: ami-088ba3e5460a63e7a
     ap-southeast-1:
-      WS2019FULLBASE: ami-003ad59a0b2b3c98f
+      WS2019FULLBASE: ami-0e5035da109917399
     ap-southeast-2:
-      WS2019FULLBASE: ami-09a17b63e7283d6a2
+      WS2019FULLBASE: ami-0f783075765a8d1c5
     eu-central-1:
-      WS2019FULLBASE: ami-0075ac87f3bb991bc
+      WS2019FULLBASE: ami-0075b084561781ea8
     us-east-1:
-      WS2019FULLBASE: ami-0f38562b9d4de0dfe
+      WS2019FULLBASE: ami-02b5cd5aa444bee23
     us-east-2:
-      WS2019FULLBASE: ami-066a1a3fa81bfbd00
+      WS2019FULLBASE: ami-056f139b85f494248
     us-west-1:
-      WS2019FULLBASE: ami-0d1b8b740ddc3b78d
+      WS2019FULLBASE: ami-0f98ff6e3a7e950b8
     us-west-2:
-      WS2019FULLBASE: ami-09fa39d0afa9024db
+      WS2019FULLBASE: ami-0d28bf0201017ce45
 Resources:
   SafeKitServer:
     Type: AWS::EC2::Instance

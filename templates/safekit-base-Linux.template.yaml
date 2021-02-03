@@ -95,39 +95,39 @@ Conditions:
 Mappings:
   AWSAMIRegionMap:
     AMI:
-      AMZNLINUX2: amzn2-ami-hvm-2.0.20200617.0-x86_64-gp2
+      AMZNLINUX2: amzn2-ami-hvm-2.0.20210126.0-x86_64-gp2
     eu-north-1:
-      AMZNLINUX2: ami-07d2cd50077a70430
+      AMZNLINUX2: ami-0eb6f319b31f7092d
     ap-south-1:
-      AMZNLINUX2: ami-0732b62d310b80e97
+      AMZNLINUX2: ami-08e0ca9924195beba
     eu-west-3:
-      AMZNLINUX2: ami-0bfddfb1ccc3a6993
+      AMZNLINUX2: ami-0ea4a063871686f37
     eu-west-2:
-      AMZNLINUX2: ami-04122be15033aa7ec
+      AMZNLINUX2: ami-098828924dc89ea4a
     eu-west-1:
-      AMZNLINUX2: ami-0c3e74fa87d2a4227
+      AMZNLINUX2: ami-0fc970315c2d38f01
     ap-northeast-2:
-      AMZNLINUX2: ami-0e92198843e11ccee
+      AMZNLINUX2: ami-09282971cf2faa4c9
     ap-northeast-1:
-      AMZNLINUX2: ami-06ad9296e6cf1e3cf
+      AMZNLINUX2: ami-0992fc94ca0f1415a
     sa-east-1:
-      AMZNLINUX2: ami-081a078e835a9f751
+      AMZNLINUX2: ami-089aac6323aa08aee
     ca-central-1:
-      AMZNLINUX2: ami-05de9e98f3bef5e8a
+      AMZNLINUX2: ami-075cfad2d9805c5f2
     ap-southeast-1:
-      AMZNLINUX2: ami-0adbe59da7d24a349
+      AMZNLINUX2: ami-0e2e44c03b85f58b3
     ap-southeast-2:
-      AMZNLINUX2: ami-0a58e22c727337c51
+      AMZNLINUX2: ami-04f77aa5970939148
     eu-central-1:
-      AMZNLINUX2: ami-00edb93a4d68784e3
+      AMZNLINUX2: ami-0a6dc7529cd559185
     us-east-1:
-      AMZNLINUX2: ami-08f3d892de259504d
+      AMZNLINUX2: ami-047a51fa27710816e
     us-east-2:
-      AMZNLINUX2: ami-016b213e65284e9c9
+      AMZNLINUX2: ami-01aab85a5e4a5a0fe
     us-west-1:
-      AMZNLINUX2: ami-01311df3780ebd33e
+      AMZNLINUX2: ami-005c06c6de69aee84
     us-west-2:
-      AMZNLINUX2: ami-0b1e2eeb33ce3d66f
+      AMZNLINUX2: ami-0e999cbd62129e3b1
 Resources:
   SafeKitServer:
     Type: AWS::EC2::Instance
